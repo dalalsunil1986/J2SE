@@ -1,0 +1,29 @@
+//SD1.java
+class Sample
+{
+	static String insname;
+	int stno;
+	String sname;
+	static//static block
+	{
+		insname="JNTU";
+	}
+	Sample(int no,String name)
+	{
+		stno=no;
+		stname=name;
+	}
+}//Sample
+
+class SD1
+{
+	public static void main(String[] args) 
+	{
+		Sample s1=new Sample(10,"Ravi");
+		Sample s2=new Sample(11,"Sathya");
+		System.out.println("Ravi Details");
+		System.out.println(s1.stno+" "+s1.sname+" "+s1.insname);
+		System.out.println("Sathya Details");
+		System.out.println(s2.stno+" "+s2.sname+" "+s2.insname);
+	}
+}//Sample

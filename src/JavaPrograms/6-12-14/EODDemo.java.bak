@@ -1,0 +1,35 @@
+//EODDemo.java
+class EOD 
+{
+	int n;
+	void accept(int x)
+	{
+		n=x;
+	}
+	void decide()
+	{
+		int r=n%2;
+		if(r==0)
+			System.out.println(n+"is EVEN");
+		else
+			System.out.println(n+"is ODD");
+	}//decide()
+}//EOD
+class EODDemo
+{	
+	public static void main(String[] args) 
+	{
+		if(args.length!=1)
+		{
+			System.out.println("Plz enter one value");
+		}
+		else
+		{
+			int n=Integer.parseInt(args[0]);
+			EOD e=new EOD();
+			e.accept()
+			e.decide()
+		}//else
+	}//main()
+}//EODDemo---ELC
+			

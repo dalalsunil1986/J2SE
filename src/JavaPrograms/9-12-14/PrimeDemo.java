@@ -1,0 +1,61 @@
+//PrimeDemo.java
+import java.util.Scanner;
+class Prime
+{
+	int n;
+	void set(int x)
+	{
+		n=x;
+	}
+	String decide()
+	{
+		int i;
+		for(i=2;i<n;i++)
+		{
+			int r=n%i;
+			System.out.println("r = "+r);
+			if(r==0)
+			{
+				break;
+			}
+		}//for
+		if(i==n)
+			return "PRIME";
+		else
+			return"NOT PRIME";
+	}//decide
+	void disp()
+	{
+		String res=decide();
+			System.out.println(n+"is"+res);
+	}
+}//Prime---BLC
+
+class PrimeDemo
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Plz enter one value");
+		int n;
+		n=sc.nextInt();
+	//else		 
+	//{
+		int x=n;//Integer.parseInt(n);
+			if(x<=1)
+			{
+				System.out.println(x+"is invalid input");
+			}
+			else
+			{
+			Prime p=new Prime();
+	    	p.set(x);
+			p.disp();
+			}//else
+	//}//else
+	}
+}//PrimeDemo---ELC
+	
+
+
+

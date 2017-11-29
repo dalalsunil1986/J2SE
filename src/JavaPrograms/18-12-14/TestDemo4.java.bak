@@ -1,0 +1,30 @@
+//TestDemo4.java
+class Test
+{
+	int a,b;
+	Test(int a,int b)
+	{
+		this.a=a;
+		this.b=b;
+		a=a+1;
+		b=b+1;
+		this.a=this.a+2;
+		this.b=this.b+2;
+			System.out.println("val of a(Formal Parameter)="+a);
+			System.out.println("val of b(Formal Parameter)="+b);
+	}
+	void disp()
+	{
+		System.out.println("val of a="+this);
+		System.out.println("val of b="+this.b);
+	}
+}//Test
+
+class TestDemo4 
+{
+	public static void main(String[] args) 
+	{
+		Test t1=new Test(10,20);
+		t1.disp();
+	}
+}//TestDemo4

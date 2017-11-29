@@ -1,0 +1,30 @@
+ //TD4.java
+class Test
+{
+	int a=1;
+	static
+	{
+		System.out.println("i am from static block---Test");
+	}
+
+	{
+		System.out.println("i am from instance block---Test");
+		a=10;
+		System.out.println("val of a instance block="+a);
+	}
+	Test()
+	{
+		System.out.println("i am from Test---DC");
+		a=20;
+		System.out.println("val of a Test()="+a);
+	}
+}//Test
+class TD4 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("i am from main()---TD4");
+		Test t1=new Test();
+		Test t2=new Test();
+	}
+}//TD4

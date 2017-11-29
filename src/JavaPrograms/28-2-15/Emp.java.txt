@@ -1,0 +1,42 @@
+//Emp.java
+package ep;
+import java.Util.*;
+public class Emp
+{
+int ssno;
+String ename;
+float sal;
+String desig;
+public Emp readValues()
+{
+Scanner s=new Scanner(System.in);
+System.out.println("Enter Emp ssno");
+ssno=integer.parseInt(s.nextLine());
+System.out.println("Enter Emp Name");
+ename=s.nextLine();
+System.out.println("Enter Emp Sal");
+sal=Float.parseFloat(s.nextLine());
+System.out.println("Enter Emp Desig");
+desig=s.nextLine();
+return this;
+}
+public LinkedList empDTO()
+{
+LinkedList ll=new LinkedList();
+ll.add("Emp social Security No="+ssno);
+ll.add(Emp Name="+ename);
+ll.add("Emp Desig="desig);
+return ll;
+}
+public static void dispDTO(LinkedList ll)
+{
+System.out.println("\t\t------------");
+System.out.println("\t\tEMP Details");
+System.out.println("\t\t--------");
+object obj[]=ll.toArray()
+{
+System.out.println("\t\t"+eo);
+}
+SYstem.out.println("\t\t-----");
+}
+}//Emp-----BLC-------DTO/DAO
